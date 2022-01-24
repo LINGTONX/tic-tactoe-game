@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@451&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@451&family=Roboto:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +11,7 @@
     height: 28rem;
     width: 23rem;
     margin: 20% auto;
+    position: relative;
     
 }
 
@@ -31,6 +34,7 @@
 }
 body{
     background: var(--background);
+    font-family: 'Roboto', sans-serif;
 }
 .Lgreen{
     color:var(--xiconColor);
@@ -199,4 +203,57 @@ button{
     padding: 1rem 0;
     font-size: 2rem;
     letter-spacing: 0.6rem;
+}
+
+/* WIN CARD STYLING */
+.win-card{
+    height: 10rem;
+    width: 100%;
+    background: var(--darkerBackground);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+}
+
+.wonBtn{
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.8rem;
+    
+}
+.wonBtn button:first-child{
+    background: var(--milkColor);
+}
+.wonBtn button:last-child{
+    background: var(--OiconColor);
+}
+.win-card div h3{
+    color: var(--milkColor);
+    
+}
+
+.winnerText{
+    color: var(--xiconColor);
+    font-size: 1rem;
+    
+}
+
+.winnerText h2 span{
+    font-size: 2.2rem;
+    font-weight: bolder;
+
+}
+.restart-card{
+    height: 8rem;
+    width: 100%;
+    background: var(--darkerBackground);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 65%;
 }
