@@ -139,9 +139,16 @@ button{
     gap: 0.5rem;
 
 }
-.pickBtn i{
+.pickBtn button{
     font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--milkColor);
 }
+.pickBtn button:hover {
+    background: var(--milkColor);
+    color: var(--background);
+}
+
 
 .pickBtn button{
     padding: 0.4rem 4rem;
