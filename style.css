@@ -187,3 +187,9 @@ button{
     background: var(--xiconColor);
     border-bottom: 6px solid  #036491;
 }
+.front-Logo{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+}
