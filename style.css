@@ -13,8 +13,27 @@
     margin: 20% auto;
     position: relative;
     
+    
 }
-
+.gameWindow{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: var(--background);
+    
+}
+.gameWrapper{
+    height: 28rem;
+    width: 23rem;
+    margin: 20% auto;
+    
+    
+}
 .pd0-5{
     padding: 0.5rem;
 }
@@ -73,12 +92,13 @@ button{
     width: 80px;
     box-shadow:0 0 19px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
-    ;
    
 }
-.gamebox i{
-    padding: 0.5rem 0 0 0;
+.gamebox {
+    padding: 0.2rem 0 0 0;
     font-size: 4rem;
+    background: var(--background);
+    font-weight: 600;
 }
 .gameBoard{
     display: grid;
@@ -86,6 +106,7 @@ button{
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
+    
 }
 
 .gameheader{
@@ -246,14 +267,28 @@ button{
     font-weight: bolder;
 
 }
-.restart-card{
-    height: 8rem;
-    width: 100%;
+
+
+#restart-card{
     background: var(--darkerBackground);
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* margin: 35% auto; for tablet */
+    margin: 25% auto;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 65%;
+    z-index:2;
+
+
+
+}
+.restart-Card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0 0 0;
+   
+   
 }
