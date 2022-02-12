@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+     <!-- WELCOME NEW GAME PAGE -->
     <div class="container">
             <div class="front-Logo"><i class="fas Lgreen fa-times"></i><i class="far Oyellow fa-circle"></i></div>
             <div class="playerMarkCard pd0-5">
                 <div class="pickMark pd0-5"> <h3> PICK PLAYER 1'S MARK</h3></div>
                 <div class="playerOneMark ">
                     <div class="pickBtn pd0-5"> 
-                        <button class="Lgreen">X</button>
+                        <button class="Lgreen ">X</button>
                         <button class="Oyellow">O</button>
                     </div>   
                 </div>
@@ -33,6 +34,9 @@
                 </div>
             </div>
     </div>
+    <!-- welcome new game ends -->
+
+    <!-- GAMEBOARD WINDOW PAGE -->
     <div class="gameWindow" id="gameWindow">
         
         <div class="gameWrapper" >
@@ -40,54 +44,60 @@
             <div class="gameheader">
                 <div class="gameLogo"><i class="fas Lgreen fa-times"></i><i class="far Oyellow fa-circle"></i></div>
                 <div class="turnBtn"><button><i class="fas Lgreen fa-times"></i>Turn</button></div>
-                <div class="restart"> <button onclick="restart()" ><i class="fas fa-redo"></i></button></div>
+                <div class="restart"> <button id='redo' ><i class="fas fa-redo"></i></button></div>
             </div>
             <div class="gameBoard"> 
-                <button class="gamebox Lgreen">X</button>
-                <button class="gamebox Oyellow">O</button>
                 <button class="gamebox "></button>
-                <button class="gamebox Oyellow">O</button>
-                <button class="gamebox Lgreen">X</button>
+                <button class="gamebox "></button>
+                <button class="gamebox "></button>
+                <button class="gamebox "></button>
+                <button class="gamebox "></button>
                 <button class="gamebox"></button>
                 <button class="gamebox"></button>
-                <button class="gamebox Oyellow">O</button>
-                <button class="gamebox Lgreen">X</button>
+                <button class="gamebox "></button>
+                <button class="gamebox "></button>
             
             </div>
             <div class="gameProgressInfo">
                 <div class="gameInfo btn-grey">
-                    <h5>X(YOU) <span>14</span></h5>
+                    <h5 >X(YOU) <span id="Xscore">14</span></h5>
                 </div>
                 <div class="gameInfo btn-milky">
                     <h5>TIES<span>14</span></h5>
                 </div>
                 <div class="gameInfo btn-yellow">
-                    <h5>O(CPU) <span>14</span></h5>
+                    <h5>O(CPU) <span id="Yscore">14</span></h5>
                 </div>
         
             </div>
         </div>
     </div>
+    <!-- game board window ends -->
     
-<div class="win-card">
-        <div><h3>You Won</h3></div>
-        <div class="winnerText"><h2><span>X</span> TAKES THE ROUND</h2></div>
+    <!-- PLAYER WON CARD -->
+<div class="win-card" id="winCard">
+        <div><h3 id="lost">You Won</h3></div>
+        <div class="winnerText"><h2><span id="winSpan"></span> TAKES THE ROUND</h2></div>
         <div class="wonBtn">
-            <button class="quit">QUIT</button>
-            <button class="next-round">NEXT ROUND</button>
+            <button class="quit" id="quit">QUIT</button>
+            <button class="next-round" id="NXTround">NEXT ROUND</button>
         </div>
 </div>
+    <!-- Player won card ends -->
 
+    <!-- RESTART GAME CARD -->
 <div id="restart-card">
 
     <div  class="restart-Card" >
             <div class="winnerText"><h2>RESTART GAME?</h2></div>
             <div class="wonBtn">
                 <button onclick="cancel()" class="quit">NO, CANCEL</button>
-                <button class="next-round">YES, RESTART</button>
+                <button class="next-round" id="restart">YES, RESTART</button>
             </div>
     </div>
 </div>
+    <!-- restard game card ends  -->
+
 <script src="./main.js"></script>
 </body>
 </html
